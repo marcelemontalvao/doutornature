@@ -113,11 +113,94 @@ function createThirdSection() {
     subtitle.classList.add("text-white", "fs-2", "w-75" ,"fw-bold", "text-center", "mt-5")
     subtitle.innerText = "Você não verá preço menor em outro lugar"
 
-    // const { majorDiv } = createBannersPrice()
-    // console.log(majorDiv)
-    divTitle.append(spanTitle, subtitle)
-    divTop.append(divTitle)
-    section.append(divTop)
+    divTitle.append(spanTitle)
+    divTop.append(divTitle, subtitle)
+    section.append(divTop, createBannersPrice())
+    
+    return section
+}
+
+
+function createFourthSection() {
+    const section = document.querySelector("#fourth-section")
+
+    const title = document.createElement("p")
+    title.classList.add("display-6","w-50", "text-center", "color-blue-title", "fw-bold", "mt-5")
+    title.innerText ="Se não notar resultados, sua compra sai de graça"
+
+    const subtitle = document.createElement("p")
+    subtitle.classList.add("red-color","fs-5")
+    subtitle.innerText = "Sem perguntas, nem pegadinhas..."
+
+    const divSelo = document.createElement("div")
+    divSelo.classList.add("d-flex", "col-md-8",
+    "align-items-center", "justify-content-center", "row", "p-2", "br-12", "shadow-lg", "bg-body")
+
+    const divImgSelo = document.createElement("div")
+    divImgSelo.classList.add("col-md-4", "d-flex", "align-items-center", "justify-content-center")
+
+    const imgSelo = document.createElement("img")
+    imgSelo.classList.add("w-75", "h-75")
+    imgSelo.src = "./asset/selo-garantia.png"
+
+    const divText = document.createElement("div")
+    divText.classList.add("col-md-8", "d-grid", "gap-4")
+
+    const span1 = document.createElement("span")
+    span1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+
+    const span2 = document.createElement("span")
+    span2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+
+    const title2 = document.createElement("p")
+    title2.classList.add("display-6","w-50", "text-center", "color-blue-title", "fw-bold", "mt-5")
+    title2.innerText = "Veja alguns resultados do Active Anti Ox*"
+
+    const subtitle2 = document.createElement("p") 
+    subtitle2.classList.add("red-color","fs-5")
+    subtitle2.innerText = "Experimente e comece a hidratar sua pele de verdade"
+
+    const divImages = document.createElement("div")
+    divImages.classList.add("d-flex", "align-items-center", "justify-content-center", "col-md-10", "gap-5")
+
+    const divImage1 = document.createElement("div")
+    divImage1.classList.add("d-flex", "flex-column", "col-md-5")
+
+    const img7 = document.createElement("img")
+    img7.src = "./asset/image7.jpg"
+
+    const img8 = document.createElement("img")
+    img8.src = "./asset/image8.jpg"
+
+    const img9 = document.createElement("img")
+    img9.src = "./asset/image9.jpg"
+
+    const img10 = document.createElement("img")
+    img10.src = "./asset/image10.jpg"
+
+    const divImage2 = document.createElement("div")
+    divImage2.classList.add("d-flex", "flex-column", "col-md-5")
+
+    const description = document.createElement("p")
+    description.classList.add("d-grid", "col-md-7", "mb-5")
+    description.innerText = "*Somos honestos e transparentes com nossos clientes, os resultados podem variar de pessoa para pessoa, cada organismo é único e vai reagir aos compostos de forma diferente. Aproveite a nossa garantia incondicional, compre e avalie você mesmo os resultados. Esta fórmula foi desenvolvida por médico e sua equipe de pesquisadores."
+
+    divImgSelo.append(imgSelo)
+    divText.append(span1, span2)
+    divSelo.append(divImgSelo, divText)
+    divImage1.append(img7, img9)
+    divImage2.append(img8, img10)
+    divImages.append(divImage1, divImage2)
+    
+    section.append(title, subtitle, divSelo, title2, subtitle2, divImages, description)
+    console.log(section)
+
+    return section
+}
+
+
+function createFifthSection() {
+    
 }
 
 function createBannersPrice() {
@@ -192,6 +275,8 @@ function createBannersPrice() {
 
     const imgBadge = document.createElement("img")
     imgBadge.src = "./asset/badge.png"
+    imgBadge.width = 50;
+    imgBadge.height = 50
 
 
     const lastMajorDivSecondBanner = document.createElement("div")
@@ -269,11 +354,12 @@ function createBannersPrice() {
     divFirstBanner.append(title, divBoxes, divDiscount1, divDiscount2, button1)
 
     majorDiv.append(divFirstBanner, divSecondBanner)
-    console.log(majorDiv)
     return majorDiv
 }
+
 
 createNavbarBrand()
 createFirstSection()
 createSecondSection()
-// createBannersPrice()
+createThirdSection()
+createFourthSection()
