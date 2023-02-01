@@ -270,7 +270,7 @@ function createBannersPrice() {
 
     majorDiv.append(divFirstBanner, divSecondBanner)
     console.log(majorDiv)
-    return majorDiv;
+    return majorDiv
 }
 
 createNavbarBrand()
