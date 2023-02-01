@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    height: 100vh;
+}
+
+.bg-primary-color {
+    background-color: #F5F5F5;
+}
+
+.bg-img-desktop {
+    background-image: url("../asset/background-desktop.png");
+    background-attachment: fixed;
+}
+
+.bg-green {
+    background-color:#1FAB36;
+}
+
+.bg-blue {
+    background-color: #3B4157;
+}
+
+.bg-mark {
+    background-image: url("../asset/mark.svg");
+}
+
+.bg-gray {
+    background-color:#606160;
+}
+
+.bg-red {
+    background-color: #FF594E;
+}
+
+.red-color {
+    color: #FF594E;
+}
+
+.br-12 {
+    border-radius: 2rem;
+}
+
+.gr-color {
+    color: #606160;
+}
+
+.bg-light-gray {
+    background-color: lightgray;
+    color: #606160;
+}
+
+.min-w-300 {
+    min-width: 300px;
+}
+
+.fs-7 {
+    font-size: smaller;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.color-blue-title {
+    color: #484B57;
+}
