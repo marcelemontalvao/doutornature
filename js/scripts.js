@@ -30,7 +30,7 @@ function createFirstSection() {
     iframe.height=415
     iframe.src="https://www.youtube.com/embed/5lDhkpEGgj8"
     iframe.frameBorder=0
-    iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     iframe.allowFullscreen=true
 
     const link = document.createElement("a")
@@ -51,7 +51,6 @@ function createFirstSection() {
 
     link.appendChild(svg)
     section.append(title, subtitle, iframe, link)
-    console.log(section)
     return section
 }
 
@@ -97,6 +96,184 @@ function createSecondSection() {
     return section
 }
 
+function createThirdSection() {
+    const section = document.querySelector("#third-section")
+
+    const divTop = document.createElement("div")
+    divTop.classList.add("w-75", "d-flex", "flex-column", "align-items-center", "justify-content-center")
+
+    const divTitle = document.createElement("div")
+    divTitle.classList.add("bg-mark", "col-md-3", "d-flex", "align-items-center", "justify-content-center")
+
+    const spanTitle = document.createElement("span")
+    spanTitle.classList.add("text-white", "fs-4", "fw-bold")
+    spanTitle.innerText = "OFERTA ÚNICA"
+
+    const subtitle = document.createElement("p")
+    subtitle.classList.add("text-white", "fs-2", "w-75" ,"fw-bold", "text-center", "mt-5")
+    subtitle.innerText = "Você não verá preço menor em outro lugar"
+
+    // const { majorDiv } = createBannersPrice()
+    // console.log(majorDiv)
+    divTitle.append(spanTitle, subtitle)
+    divTop.append(divTitle)
+    section.append(divTop)
+}
+
+function createBannersPrice() {
+    const majorDiv = document.createElement("div")
+    majorDiv.classList.add("col-md-12", "d-flex", "align-items-center", "justify-content-center", "h-75")
+
+    const divFirstBanner = document.createElement("div")
+    divFirstBanner.classList.add("col-md-4", "w-25", "py-3", "d-flex", "flex-column", "align-items-center", "justify-content-center", "px-3", "rounded", "min-w-300", "bg-white")
+
+    const title = document.createElement("p")
+    title.classList.add("w-100", "rounded", "p-2", "d-flex", "justify-content-center", "align-items-center", "text-center", "text-white", "bg-gray")
+    title.innerText = "ESCOLHA SEU PACOTE"
+
+    const divBoxes = document.createElement("div")
+    divBoxes.classList.add("w-100", "d-flex", "justify-content-around", "mb-2")
+
+    const divFirstBox = document.createElement("div")
+    divFirstBox.classList.add("px-3", "d-flex", "flex-column", "justify-content-center", "align-items-center", "text-center", "bg-light-gray", "rounded")
+
+    const firstSpanfirstBox = document.createElement("span")
+    firstSpanfirstBox.classList.add("fs-2")
+    firstSpanfirstBox.innerText = "1"
+    const secondSpanfirstBox = document.createElement("span")
+    secondSpanfirstBox.classList.add("fs-7")
+    secondSpanfirstBox.innerText = "CAIXA"
+
+    const divSecondBox = document.createElement("div")
+    divSecondBox.classList.add("px-3", "d-flex", "flex-column", "justify-content-center", "align-items-center", "text-center","text-white", "bg-green", "rounded")
+
+    const firstSpanSecondBox = document.createElement("span")
+    firstSpanSecondBox.classList.add("fs-2")
+    firstSpanSecondBox.innerText = "3"
+    const secondSpanSecondBox = document.createElement("span")
+    secondSpanSecondBox.classList.add("fs-7")
+    secondSpanSecondBox.innerText = "CAIXAS"
+
+    const divthirdBox = document.createElement("div")
+    divthirdBox.classList.add("px-3", "d-flex", "flex-column", "justify-content-center", "align-items-center", "text-center", "bg-light-gray", "rounded")
+
+    const firstSpanThirdBox = document.createElement("span")
+    firstSpanThirdBox.classList.add("fs-2")
+    firstSpanThirdBox.innerText = "6"
+    const secondSpanThirdBox = document.createElement("span")
+    secondSpanThirdBox.classList.add("fs-7")
+    secondSpanThirdBox.innerText = "CAIXAS"
+
+    const divDiscount1 = document.createElement("div")
+    divDiscount1.classList.add("w-100", "d-flex", "flex-column", "justify-content-center", "align-items-center", "text-center", "mt-1", "mb-2")
+    const firstSpanDiscount1 = document.createElement("span")
+    firstSpanDiscount1.innerText = "R$ 148,60 por caixa" 
+
+    const secondSpanDiscount1 = document.createElement("span")
+    secondSpanDiscount1.innerText = "Economize R$ 136,20" 
+   
+    const divDiscount2 = document.createElement("div")
+    divDiscount2.classList.add("w-100", "d-flex", "flex-column", "justify-content-center", "align-items-center", "text-center", "mt-1", "mb-2")
+    const firstSpanDiscount2 = document.createElement("span")
+    firstSpanDiscount2.innerText = "HOJE: 12X R$ 49,99" 
+
+    const secondSpanDiscount2 = document.createElement("span")
+    secondSpanDiscount2.innerText = "ou R$ 445,80 à vista" 
+
+    const button1 = document.createElement("button")
+    button1.classList.add("bg-red", "w-100", "p-2", "text-white", "border-0", "rounded-pill")
+    button1.innerText = "Comprar Agora"
+
+    const divSecondBanner = document.createElement("div")
+    divSecondBanner.classList.add("col-md-3", "py-3", "d-flex", "flex-column", "position-relative", "rounded", "gap-2", "bg-white")
+
+    const divBadge = document.createElement("div")
+    divBadge.classList.add("position-absolute", "top-0", "end-0")
+
+    const imgBadge = document.createElement("img")
+    imgBadge.src = "./asset/badge.png"
+
+
+    const lastMajorDivSecondBanner = document.createElement("div")
+    lastMajorDivSecondBanner.classList.add("d-flex","flex-column", "justify-content-center", "align-items-center","p-2")
+
+    const titleSecondBanner = document.createElement("p")
+    titleSecondBanner.classList.add("w-100", "py-2", "d-flex", "justify-content-center", "align-items-center", "text-center", "text-white", "bg-gray", "rounded")
+    titleSecondBanner.innerText = "ASSINE E ECONOMIZE (OPCIONAL)"
+
+    const divOptions = document.createElement("span")
+    divOptions.classList.add("d-flex", "flex-column", "gap-1", "p-1", "fs-7")
+
+    const optionImg1 = document.createElement("img")
+    optionImg1.src = "./asset/check-icon.png"
+
+    const optionImg2 = document.createElement("img")
+    optionImg2.src = "./asset/check-icon.png"
+
+    const optionImg3 = document.createElement("img")
+    optionImg3.src = "./asset/check-icon.png"
+
+    const optionImg4 = document.createElement("img")
+    optionImg4.src = "./asset/check-icon.png"
+
+    const option1 = document.createElement("span")
+    option1.classList.add("fs-7")
+   
+    const spanOption1 = document.createElement("span")
+    spanOption1.innerText = "Desconto Máximo Aplicado"
+
+    const option2 = document.createElement("span")
+    option2.classList.add("fs-7")
+
+    const spanOption2 = document.createElement("span")
+    spanOption2.innerText = "Entrega Automática em sua Casa"
+
+    const option3 = document.createElement("span")
+    option3.classList.add("fs-7")
+
+    const spanOption3 = document.createElement("span")
+    spanOption3.innerText = "Menor Preço Garantido / Sem Reajustes"
+
+    const option4 = document.createElement("span")
+    option4.classList.add("fs-7")
+
+    const spanOption4 = document.createElement("span")
+    spanOption4.innerText = "Cancele quando quiser / Sem taxas"
+
+    const button2 = document.createElement("button")
+    button2.classList.add("w-100", "p-2", "border-0", "fs-7", "bg-light-gray")
+    button2.innerText = "SIM! Eu quero ser assinante e ganhar DESCONTO!"
+
+    const imgButton2 = document.createElement("img")
+    imgButton2.src = "./asset/check-icon-mobile.png"
+
+    
+    button2.append(imgButton2) 
+    option1.append(optionImg1, spanOption1)
+    option2.append(optionImg2, spanOption2)
+    option3.append(optionImg3, spanOption3)
+    option4.append(optionImg4, spanOption4)
+    divOptions.append(option1, option2, option3, option4)
+    lastMajorDivSecondBanner.append(titleSecondBanner, divOptions, button2)
+    divBadge.append(imgBadge)
+    divSecondBanner.append(divBadge, lastMajorDivSecondBanner)
+   
+    divDiscount1.append(firstSpanDiscount1, secondSpanDiscount1)
+    divDiscount2.append(firstSpanDiscount2, secondSpanDiscount2)
+
+    divFirstBox.append(firstSpanfirstBox, secondSpanfirstBox)
+    divSecondBox.append(firstSpanSecondBox, secondSpanSecondBox)
+    divthirdBox.append(firstSpanThirdBox, secondSpanThirdBox)
+
+    divBoxes.append(divFirstBox, divSecondBox, divthirdBox)
+    divFirstBanner.append(title, divBoxes, divDiscount1, divDiscount2, button1)
+
+    majorDiv.append(divFirstBanner, divSecondBanner)
+    console.log(majorDiv)
+    return majorDiv;
+}
+
 createNavbarBrand()
 createFirstSection()
 createSecondSection()
+// createBannersPrice()
