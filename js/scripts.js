@@ -17,7 +17,7 @@ function createFirstSection() {
     
     const title = document.createElement("p")
     title.classList.add("display-6", "color-blue-title", "w-50", "text-center", "fw-bold", "mt-5")
-    title.innerText = "O jeito certo de hidratar a pele tipo 'crepe'" 
+    title.innerText = 'O jeito certo de hidratar a pele tipo "crepe"' 
 
     const subtitle = document.createElement("p")
     subtitle.classList.add("bg-green", "text-white", "fs-6", "p-1")
@@ -55,6 +55,48 @@ function createFirstSection() {
     return section
 }
 
+function createSecondSection() {
+    const section = document.querySelector("#div-doutor-rafael")
+    const title = document.createElement("p")
+    title.classList.add("display-6", "color-blue-title", "w-50", "text-center", "fw-bold", "mt-5")
+    title.innerText = 'Porque cremes não hidratam esse tipo de pele "crepe"?' 
+
+    const subtitle = document.createElement("p")
+    subtitle.classList.add("red-color", "fs-5")
+    subtitle.innerText = "Descubra uma alternativa mais eficiente."
+
+
+    const majorDiv = document.createElement("div")
+    majorDiv.classList.add("col-md-12", "row", "d-flex", "align-items-center", "justify-content-center")
+
+    const divText = document.createElement("div")
+    divText.classList.add("col-md-5", "d-grid", "gap-4")
+    
+    const span1 = document.createElement("span")
+    span1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+
+    const span2 = document.createElement("span")
+    span2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+
+    const span3 = document.createElement("span")
+    span3.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+
+    const divImg = document.createElement("div")
+    divImg.classList.add("col-md-4", "d-flex", "align-items-center", "justify-content-center")
+
+    const img = document.createElement("img")
+    img.classList.add("w-75", "h-75")
+    img.src = "./asset/doutor-rafael.png"
+
+    
+    divText.append(span1,span2,span3)
+    divImg.append(img)
+    majorDiv.append(divText, divImg)
+    section.append(title, subtitle, majorDiv)
+
+    return section
+}
 
 createNavbarBrand()
 createFirstSection()
+createSecondSection()
