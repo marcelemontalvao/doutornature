@@ -20,7 +20,7 @@ function createFirstSection() {
     title.innerText = "O jeito certo de hidratar a pele tipo 'crepe'" 
 
     const subtitle = document.createElement("p")
-    subtitle.classList.add("bg-green", "text-white", "fs-4", "p-1")
+    subtitle.classList.add("bg-green", "text-white", "fs-6", "p-1")
     subtitle.innerText = `E porque a indústria de cosméticos nunca falou sobre isso...` 
 
     const iframe = document.createElement("iframe")
