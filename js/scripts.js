@@ -539,11 +539,16 @@ function createBannersPrice() {
     return majorDiv
 }
 
-createNavbarBrand()
-createFirstSection()
-createSecondSection()
-createThirdSection()
-createFourthSection()
-createFifthSection()
-createSixthSection() 
-createFooter()
+
+function startAplication() {
+    createNavbarBrand()
+    createFirstSection()
+    createSecondSection()
+    createThirdSection()
+    createFourthSection()
+    createFifthSection()
+    createSixthSection() 
+    createFooter()
+}
+
+startAplication()
