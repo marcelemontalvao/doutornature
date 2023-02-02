@@ -66,19 +66,19 @@ function createSecondSection() {
 
 
     const majorDiv = document.createElement("div")
-    majorDiv.classList.add("col-md-12", "row", "d-flex", "align-items-center", "justify-content-center")
+    majorDiv.classList.add("col-md-12", "row", "d-flex", "align-items-center", "justify-content-center");
 
     const divText = document.createElement("div")
     divText.classList.add("col-md-5", "d-grid", "gap-4")
     
     const span1 = document.createElement("span")
-    span1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    span1.innerText = 'Em minhas pesquisas descobri que cremes hidratantes comuns, não funcionam em peles finas e ressecadas, com aparência amassada, que popularmente são chamadas de "pele crepe".';
 
     const span2 = document.createElement("span")
-    span2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    span2.innerText = "A razão disso é porque existem pequenas rachaduras na superfície desse tipo de pele, por onde a água vaza. Dessa forma, não adianta insistir aplicando cremes hidratantes, pois sua pele não vai reter essa hidratação.";
 
     const span3 = document.createElement("span")
-    span3.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    span3.innerText = "Já quando você ingere alguns compostos específicos, e passa a hidratar sua pele de dentro para fora, aí o jogo vira a seu favor. Active Anti Ox é uma fórmula que desenvolvi junto de minha equipe, para ajudar a hidratar e recuperar a sua pele agindo de dentro para fora."
 
     const divImg = document.createElement("div")
     divImg.classList.add("col-md-4", "d-flex", "align-items-center", "justify-content-center")
@@ -147,10 +147,10 @@ function createFourthSection() {
     divText.classList.add("col-md-8", "d-grid", "gap-4")
 
     const span1 = document.createElement("span")
-    span1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    span1.innerText = "Ao fazer o pedido de Active Anti Ox, você está coberto pela nossa garantia de satisfação. Esta é uma política que adotamos, e cumprimpos à risca, que visa proteger nossos consumidores, para que eles possam experimentar nossas fórmulas livre de riscos."
 
     const span2 = document.createElement("span")
-    span2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    span2.innerText = "Se após 20 dias você não estiver completamente satisfeito/a, devolveremos seu dinheiro em forma de crédito, para usar em qualquer outro produto da Doutor Nature - sem perguntas, sem burocracia."
 
     const title2 = document.createElement("p")
     title2.classList.add("display-6","w-50", "text-center", "color-blue-title", "fw-bold", "mt-5")
@@ -336,12 +336,16 @@ function createSixthSection() {
     ul.classList.add("col-md-4", "d-grid", "gap-4")
 
     const li1 = document.createElement("li")
-    li1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    li1.innerText = "Devolver a firmeza na pele crepe."
     const li2 = document.createElement("li")
-    li2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    li2.innerText = "Preencher as rugas e rachaduras da superfície da pele"
     const li3 = document.createElement("li")
-    li3.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
-    
+    li3.innerText = "Reduzir linhas finas do rosto, pescoço e colo"
+    const li4 = document.createElement("li")
+    li4.innerText = "Reestabelecer o brilho natural da pele"
+    const li5 = document.createElement("li")
+    li5.innerText = "Hidratando a pele, de dentro para fora"
+
     const divImg11 = document.createElement("div")
     divImg11.classList.add("col-md-4")
     
@@ -349,7 +353,7 @@ function createSixthSection() {
     img11.classList.add("w-75", "h-75")
     img11.src = "./asset/image11.jpg"
 
-    ul.append(li1, li2, li3)
+    ul.append(li1, li2, li3, li4, li5)
     divImg11.append(img11)
     divContainer.append(ul, divImg11)
     section.append(title, subtitle, divContainer, createBannersPrice())
