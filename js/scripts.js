@@ -319,8 +319,8 @@ function createFifthSection() {
     return section;
 }
 
-function createEighthSection() {
-    const section = document.getElementById("eighth-section")
+function createSixthSection() {
+    const section = document.getElementById("sixth-section")
     const title = document.createElement("p")
     title.classList.add("fs-1", "w-50", "color-blue-title", "text-center", "fw-bold", "mt-5")
     title.innerText = "O melhor suplemento para hidratar sua pele"
@@ -545,5 +545,5 @@ createSecondSection()
 createThirdSection()
 createFourthSection()
 createFifthSection()
-createEighthSection() 
+createSixthSection() 
 createFooter()
