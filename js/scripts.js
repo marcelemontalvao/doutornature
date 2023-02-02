@@ -20,7 +20,7 @@ function createFirstSection() {
     title.innerText = 'O jeito certo de hidratar a pele tipo "crepe"' 
 
     const subtitle = document.createElement("p")
-    subtitle.classList.add("bg-green", "text-white", "fs-6", "p-1")
+    subtitle.classList.add("bg-green", "text-white", "fs-7", "p-1")
     subtitle.innerText = `E porque a indústria de cosméticos nunca falou sobre isso...` 
 
     const iframe = document.createElement("iframe")
@@ -193,14 +193,196 @@ function createFourthSection() {
     divImages.append(divImage1, divImage2)
     
     section.append(title, subtitle, divSelo, title2, subtitle2, divImages, description)
-    console.log(section)
 
     return section
 }
 
 
 function createFifthSection() {
+    const section = document.querySelector("#fifth-section")
+
+    const title = document.createElement("p")
+    title.classList.add("text-white", "display-6", "w-50", "text-center", "fw-bold", "mt-5", "pb-4")
+    title.innerText = "Tire suas dúvidas"
+
+    const divQuestions = document.createElement("div")
+    divQuestions.classList.add("w-50", "d-grid","gap-4", "pb-5")
+
+    const divQuestion1 = document.createElement("div")
+    divQuestion1.classList.add("border-bottom","p-1")
+
+    const plus1 = document.createElement("span")
+    plus1.classList.add("red-color")
+    plus1.innerText = "+"
+
+    const spanText1 = document.createElement("span")
+    spanText1.classList.add("text-white")
+    spanText1.innerText = "Do que é feito o Active Anti-OX?"
+
+    divQuestion1.append(plus1, spanText1)
+
+    const divQuestion2 = document.createElement("div")
+    divQuestion2.classList.add("border-bottom","p-1")
+
+    const plus2 = document.createElement("span")
+    plus2.classList.add("red-color")
+    plus2.innerText = "+"
+
+    const spanText2 = document.createElement("span")
+    spanText2.classList.add("text-white")
+    spanText2.innerText = "Como devo usar o Active Anti-OX?"
+
+    divQuestion2.append(plus2, spanText2)
+
+    const divQuestion3 = document.createElement("div")
+    divQuestion3.classList.add("border-bottom","p-1")
+
+    const plus3 = document.createElement("span")
+    plus3.classList.add("red-color")
+    plus3.innerText = "+"
+
+    const spanText3 = document.createElement("span")
+    spanText3.classList.add("text-white")
+    spanText3.innerText = "Active Anti-OX tem contra-indicação?"
+
+    divQuestion3.append(plus3, spanText3)
+
+    const divQuestion4 = document.createElement("div")
+    divQuestion4.classList.add("border-bottom","p-1")
+
+    const plus4 = document.createElement("span")
+    plus4.classList.add("red-color")
+    plus4.innerText = "+"
+
+    const spanText4 = document.createElement("span")
+    spanText4.classList.add("text-white")
+    spanText4.innerText = "Precisa de prescrição médica para comprar?"
+
+    divQuestion4.append(plus4, spanText4)
+
+    const divQuestion5 = document.createElement("div")
+    divQuestion5.classList.add("border-bottom","p-1")
+
+    const plus5 = document.createElement("span")
+    plus5.classList.add("red-color")
+    plus5.innerText = "+"
+
+    const spanText5 = document.createElement("span")
+    spanText5.classList.add("text-white")
+    spanText5.innerText = "E se Active Anti-OX não funcionar para mim?"
+
+    divQuestion5.append(plus5, spanText5)
+
+    const divQuestion6 = document.createElement("div")
+    divQuestion6.classList.add("border-bottom","p-1")
+
+    const plus6 = document.createElement("span")
+    plus6.classList.add("red-color")
+    plus6.innerText = "+"
+
+    const spanText6 = document.createElement("span")
+    spanText6.classList.add("text-white")
+    spanText6.innerText = "Quando posso perceber resultados?"
+
+    divQuestion6.append(plus6, spanText6)
+
+    const divQuestion7 = document.createElement("div")
+    divQuestion7.classList.add("border-bottom","p-1")
+
+    const plus7 = document.createElement("span")
+    plus7.classList.add("red-color")
+    plus7.innerText = "+"
+
+    const spanText7 = document.createElement("span")
+    spanText7.classList.add("text-white")
+    spanText7.innerText = "Além do Vital 4k o que mais vou receber na minha compra?"
+
+    divQuestion7.append(plus7, spanText7)
+
+    const divQuestion8 = document.createElement("div")
+    divQuestion8.classList.add("border-bottom","p-1")
+
+    const plus8 = document.createElement("span")
+    plus8.classList.add("red-color")
+    plus8.innerText = "+"
+
+    const spanText8 = document.createElement("span")
+    spanText8.classList.add("text-white")
+    spanText8.innerText = "Vocês tem uma garantia de satisfação?"
+
+    divQuestion8.append(plus8, spanText8)
+   
+    divQuestions.append(divQuestion1, divQuestion2, divQuestion3, divQuestion4, divQuestion5, divQuestion6, divQuestion7, divQuestion8)
+
+    section.append(title, divQuestions)
+
+    return section;
+}
+
+function createEighthSection() {
+    const section = document.getElementById("eighth-section")
+    const title = document.createElement("p")
+    title.classList.add("fs-1", "w-50", "color-blue-title", "text-center", "fw-bold", "mt-5")
+    title.innerText = "O melhor suplemento para hidratar sua pele"
+
+    const subtitle = document.createElement("p")
+    subtitle.classList.add("red-color", "fs-5")
+    subtitle.innerText = "hidratação de verdade"
+
+    const divContainer = document.createElement("div")
+    divContainer.classList.add("col-md-12", "row", "d-flex", "align-items-center", "justify-content-center")
+
+    const ul = document.createElement("ul")
+    ul.classList.add("col-md-4", "d-grid", "gap-4")
+
+    const li1 = document.createElement("li")
+    li1.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    const li2 = document.createElement("li")
+    li2.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
+    const li3 = document.createElement("li")
+    li3.innerText = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae ex sed pariatur iste libero. Fugiat exercitationem placeat dolor commodi! Tempora cumque voluptate dolor obcaecati maiores eveniet nesciunt fugiat sit aliquam."
     
+    const divImg11 = document.createElement("div")
+    divImg11.classList.add("col-md-4")
+    
+    const img11 = document.createElement("img")
+    img11.classList.add("w-75", "h-75")
+    img11.src = "./asset/image11.jpg"
+
+    ul.append(li1, li2, li3)
+    divImg11.append(img11)
+    divContainer.append(ul, divImg11)
+    section.append(title, subtitle, divContainer, createBannersPrice())
+
+    return section;
+}
+
+
+function createFooter() {
+    const footer = document.getElementById("footer")
+
+    const div = document.createElement("div")
+    div.classList.add("d-flex", "w-75", "flex-column", "align-items-center", "justify-content-center", "col-md-12", "p-5", "mt-5")
+
+    const p = document.createElement("p")
+    p.classList.add("fs-7")
+    p.innerText = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum quo, incidunt suscipit iure cupiditate soluta distinctio animi magnam! Dolore modi similique voluptate, eius voluptates unde sunt suscipit nobis at?"
+
+    const divCopyright = document.createElement("div")
+    divCopyright.classList.add("d-flex", "w-100", "gap-4", "align-items-center", "justify-content-between")
+
+    const img = document.createElement("img")
+    img.src = "./asset/logo_footer-DoutorNature.svg"
+
+    const span = document.createElement("span")
+    span.classList.add("fs-7")
+    span.innerText = "@2002 Doutor Nature-Todos os direitos reservados - Política de Privacidade | Termos de Uso"
+
+    divCopyright.append(img, span)
+    div.append(p, divCopyright)
+    footer.append(div)
+
+    return footer
 }
 
 function createBannersPrice() {
@@ -357,9 +539,11 @@ function createBannersPrice() {
     return majorDiv
 }
 
-
 createNavbarBrand()
 createFirstSection()
 createSecondSection()
 createThirdSection()
 createFourthSection()
+createFifthSection()
+createEighthSection() 
+createFooter()
